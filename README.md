@@ -1,4 +1,5 @@
 # FPS Animation Framework
- The demo project requires URP and FPS Animation Framework to work properly. 
+ Follow these steps to get the project working:
  
- Ignore all the errors, go to the Package Manager -> Download FPS Animation Framework.
+ 1. Import the FPS Animation Framework.
+ 2. Rebuild the lighting.
