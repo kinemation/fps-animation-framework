@@ -1,0 +1,15 @@
+.idea/
+Build/
+Library/
+Logs/
+obj/
+Temp/
+UserSettings/
+Assets/Kinemation/
+Assets/KINEMATION/
+Assets/RetargetingTest/
+Packages/com.unity.asset-store-tools/
+*.csproj
+*.png
+*.sln
+*.meta

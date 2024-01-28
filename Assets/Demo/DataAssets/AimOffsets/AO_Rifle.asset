@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3b626ae8ae5d84eaab7146ee6f43d0, type: 3}
+  m_Name: AO_Rifle
+  m_EditorClassIdentifier: 
+  aimOffsetUp:
+  - boneIndex: 0
+    angle: {x: 4, y: 20}
+  - boneIndex: 1
+    angle: {x: 10, y: 14}
+  - boneIndex: 2
+    angle: {x: 20, y: 14}
+  - boneIndex: 3
+    angle: {x: 25, y: 14}
+  - boneIndex: 4
+    angle: {x: 15.5, y: 14}
+  - boneIndex: 5
+    angle: {x: 15.5, y: 14}
+  - boneIndex: 10
+    angle: {x: 36.2, y: 38.6}
+  aimOffsetRight:
+  - boneIndex: 0
+    angle: {x: 20, y: 20}
+  - boneIndex: 1
+    angle: {x: 23.333334, y: 23.333334}
+  - boneIndex: 2
+    angle: {x: 23.333334, y: 23.333334}
+  - boneIndex: 3
+    angle: {x: 23.333334, y: 23.333334}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c1c7fcaf2be3764a85222c324dd7d35, type: 3}
+  m_Name: BaseBlendAsset_Humanoid
+  m_EditorClassIdentifier: 
+  blendMask: {fileID: 31900000, guid: 1fc2434c1260cc9459e3c01926da399a, type: 2}
+  pose: {fileID: 7400000, guid: 2e3b52212d42f8144807413da9f37e97, type: 2}
+  blendProfile:
+  - boneIndex: 14
+    baseWeight: 0.7
+    animWeight: 0.657
+  - boneIndex: 15
+    baseWeight: 0.7
+    animWeight: 0.789
+  - boneIndex: 16
+    baseWeight: 0.85
+    animWeight: 0.794
+  - boneIndex: 41
+    baseWeight: 0
+    animWeight: 0
+  - boneIndex: 42
+    baseWeight: 0
+    animWeight: 0

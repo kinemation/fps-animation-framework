@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3399879f743e4df2b0f3e0021bea0961, type: 3}
+  m_Name: WAA_FAL
+  m_EditorClassIdentifier: 
+  rotationOffset: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
+  aimOffsetTable: {fileID: 11400000, guid: 7058601491d8f444287872b2f8c05086, type: 2}
+  recoilData: {fileID: 11400000, guid: 0720a1377eae4234b89eb7e573924ff2, type: 2}
+  overlayPose: {fileID: 11400000, guid: 8c0d7792c49f03149aafe53329941c5a, type: 2}
+  weaponBone:
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  adsData:
+    cameraData: {fileID: 11400000, guid: b654eede1a140da469e3545ffaaa3754, type: 2}
+    adsTranslationBlend:
+      x: 0.177
+      y: 0.207
+      z: 0.372
+    adsRotationBlend:
+      x: 0.147
+      y: 0.033
+      z: 0.406
+    pointAimOffset:
+      position: {x: -0.035, y: 0.01, z: -0.03}
+      rotation: {x: 0.002283024, y: 0.0072407126, z: 0.30069754, w: 0.9536893}
+    aimSpeed: 3.5
+    changeSightSpeed: 7
+    pointAimSpeed: 3
+  viewmodelOffset:
+    poseOffset:
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    rightHandOffset:
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+    leftHandOffset:
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+  viewOffset:
+    position: {x: 0.03, y: 0.04, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  aimSwaySettings:
+    loc:
+      x:
+        stiffness: 0.6
+        criticalDamping: 0.4
+        speed: 5
+        maxValue: 0.1
+      y:
+        stiffness: 0.6
+        criticalDamping: 0.4
+        speed: 6
+        maxValue: 0.1
+      z:
+        stiffness: 0.6
+        criticalDamping: 0.4
+        speed: 4
+        maxValue: 0.1
+      scale: {x: 0.2, y: -0.15, z: 0}
+    rot:
+      x:
+        stiffness: 0.6
+        criticalDamping: 0.4
+        speed: 14
+        maxValue: 2
+      y:
+        stiffness: 0.6
+        criticalDamping: 0.4
+        speed: 12
+        maxValue: 2
+      z:
+        stiffness: 0.72
+        criticalDamping: 0.4
+        speed: 11
+        maxValue: 2
+      scale: {x: 35, y: 30, z: 45}
+  freeAimSettings:
+    maxValue: 0
+    interpolationSpeed: 0
+    inputScale: 0
+  moveSwaySettings:
+    translationScale: {x: 0.02, y: -0.01, z: 0.03}
+    rotationScale: {x: 1, y: 2, z: -15}
+    positionSpringSettings:
+      x:
+        stiffness: 0.8
+        criticalDamping: 0.3
+        speed: 7
+        maxValue: 15
+      y:
+        stiffness: 0.8
+        criticalDamping: 0.4
+        speed: 8
+        maxValue: 15
+      z:
+        stiffness: 0.8
+        criticalDamping: 0.27
+        speed: 9
+        maxValue: 8
+      scale: {x: 0.5, y: 1, z: 0.5}
+    rotationSpringSettings:
+      x:
+        stiffness: 0.8
+        criticalDamping: 0.35
+        speed: 12
+        maxValue: 15
+      y:
+        stiffness: 0.8
+        criticalDamping: 0.4
+        speed: 10
+        maxValue: 15
+      z:
+        stiffness: 0.8
+        criticalDamping: 0.4
+        speed: 9
+        maxValue: 8
+      scale: {x: 1.5, y: 1, z: 0.3}
+    translationDampingFactor: 7
+    rotationDampingFactor: 7
+  blockData:
+    weaponLength: 0.7
+    startOffset: 0.15
+    threshold: 0.1
+    restPose:
+      position: {x: -0.05, y: -0.09, z: -0.03}
+      rotation: {x: -0.22627231, y: 0.18844119, z: -0.091121025, w: -0.9513084}
+  adsRecoilOffset: {x: 0, y: -0.05, z: -0.03}
+  adsSwayOffset: {x: 0, y: -0.05, z: -0.3}

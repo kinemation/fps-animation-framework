@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2289c574734941938c3af32db2554af0, type: 3}
+  m_Name: PistolShake
+  m_EditorClassIdentifier: 
+  shakeInfo:
+    shakeCurve:
+      x:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 2.3848486
+          outSlope: 2.3848486
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.42048275
+        - serializedVersion: 3
+          time: 0.042636633
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.576977
+          value: -0.12688053
+          inSlope: -0.031051792
+          outSlope: -0.031051792
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.335151
+        - serializedVersion: 3
+          time: 0.93297285
+          value: 0.017166525
+          inSlope: 0.35110885
+          outSlope: 0.35110885
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1.352417
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      y:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 2.3848486
+          outSlope: 2.3848486
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.42048275
+        - serializedVersion: 3
+          time: 0.24691367
+          value: 1.0010948
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.60150886
+          value: -0.35660386
+          inSlope: 0.33325237
+          outSlope: 0.33325237
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.22330037
+        - serializedVersion: 3
+          time: 0.9453803
+          value: 0.18005452
+          inSlope: 0.022189347
+          outSlope: 0.022189347
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.32071123
+        - serializedVersion: 3
+          time: 1.3395996
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      z:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 0
+          inSlope: 6.1953692
+          outSlope: 6.1953692
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.34765702
+        - serializedVersion: 3
+          time: 0.11188865
+          value: 1.0028343
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.3796003
+          value: -0.53729844
+          inSlope: 0.056664545
+          outSlope: 0.056664545
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.23291995
+        - serializedVersion: 3
+          time: 0.762652
+          value: 0.16312508
+          inSlope: 0.012664599
+          outSlope: 0.012664599
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.31405532
+        - serializedVersion: 3
+          time: 1.3029213
+          value: 0.019269451
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    pitch: {x: -3, y: -2, z: -2, w: -3}
+    yaw: {x: -1, y: -0.5, z: 0.5, w: 1}
+    roll: {x: -4, y: -3, z: 3, w: 4}
+    smoothSpeed: 25
+    playRate: 8
