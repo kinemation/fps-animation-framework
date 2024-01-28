@@ -1,3 +1,4 @@
 # FPS Animation Framework
- Public demo project for FPS Animation Framework.
- Make sure to import the framework first!
+ The demo project requires URP and FPS Animation Framework to work properly. 
+ 
+ Ignore all the errors, go to the Package Manager -> Download FPS Animation Framework.
