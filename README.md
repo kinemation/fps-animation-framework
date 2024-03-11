@@ -3,3 +3,5 @@
  
  1. Import the FPS Animation Framework.
  2. Rebuild the lighting.
+
+**Note:** the project uses URP by default.
