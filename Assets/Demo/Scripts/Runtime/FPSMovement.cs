@@ -1,6 +1,6 @@
 // Designed by KINEMATION, 2023
 
-using Kinemation.FPSFramework.Runtime.FPSAnimator;
+using KINEMATION.Shared.KAnimationCore.Runtime.Core;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -414,7 +414,7 @@ namespace Demo.Scripts.Runtime
             desiredVelocity *= _desiredGait.velocity;
 
             desiredVelocity = Vector3.Lerp(_velocity, desiredVelocity, 
-                FPSAnimLib.ExpDecayAlpha(_desiredGait.velocitySmoothing, Time.deltaTime));
+                KMath.ExpDecayAlpha(_desiredGait.velocitySmoothing, Time.deltaTime));
             
             _velocity = desiredVelocity;
 
@@ -432,7 +432,7 @@ namespace Demo.Scripts.Runtime
             desiredVelocity *= _desiredGait.velocity;
 
             desiredVelocity = Vector3.Lerp(_velocity, desiredVelocity * movementSettings.airFriction, 
-                FPSAnimLib.ExpDecayAlpha(movementSettings.airVelocity, Time.deltaTime));
+                KMath.ExpDecayAlpha(movementSettings.airVelocity, Time.deltaTime));
 
             desiredVelocity.y = _velocity.y;
             _velocity = desiredVelocity;
@@ -451,7 +451,7 @@ namespace Demo.Scripts.Runtime
             animatorVelocity *= MovementState == FPSMovementState.InAir ? 0f : 1f;
 
             AnimatorVelocity = Vector2.Lerp(AnimatorVelocity, animatorVelocity, 
-                FPSAnimLib.ExpDecayAlpha(_desiredGait.velocitySmoothing, Time.deltaTime));
+                KMath.ExpDecayAlpha(_desiredGait.velocitySmoothing, Time.deltaTime));
 
             _animator.SetFloat(MoveX, AnimatorVelocity.x);
             _animator.SetFloat(MoveY, AnimatorVelocity.y);
@@ -463,7 +463,7 @@ namespace Demo.Scripts.Runtime
             float a = _animator.GetFloat(Sprinting);
             float b = MovementState == FPSMovementState.Sprinting ? 1f : 0f;
 
-            a = Mathf.Lerp(a, b, FPSAnimLib.ExpDecayAlpha(_sprintAnimatorInterp, Time.deltaTime));
+            a = Mathf.Lerp(a, b, KMath.ExpDecayAlpha(_sprintAnimatorInterp, Time.deltaTime));
             _animator.SetFloat(Sprinting, a);
         }
 

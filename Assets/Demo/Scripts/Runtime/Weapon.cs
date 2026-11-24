@@ -1,8 +1,9 @@
 // Designed by Kinemation, 2023
 
-using Kinemation.FPSFramework.Runtime.Camera;
-using Kinemation.FPSFramework.Runtime.Core.Types;
-using Kinemation.FPSFramework.Runtime.FPSAnimator;
+using KINEMATION.FPSAnimationFramework.Runtime.Camera;
+using KINEMATION.FPSAnimationFramework.Runtime.Core;
+using KINEMATION.FPSAnimationFramework.Runtime.Playables;
+using KINEMATION.ProceduralRecoilAnimationSystem.Runtime;
 
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,21 +17,27 @@ namespace Demo.Scripts.Runtime
         Rifle
     }
     
-    public class Weapon : FPSAnimWeapon
+    public class Weapon : FPSAnimatorEntity
     {
         [Header("Animations")]
-        public AnimSequence reloadClip;
-        public AnimSequence grenadeClip;
-        public AnimSequence fireClip;
+        public FPSAnimationAsset overlayPose;
+        public FPSAnimationAsset reloadClip;
+        public FPSAnimationAsset grenadeClip;
+        public FPSAnimationAsset fireClip;
         public OverlayType overlayType;
         
         [Header("Aiming")]
         public bool canAim = true;
         [SerializeField] private List<Transform> scopes;
+        [SerializeField] private Transform pointAim;
         
         [Header("Recoil")]
         public RecoilPattern recoilPattern;
         public FPSCameraShake cameraShake;
+        public RecoilAnimData recoilData;
+        public float fireRate;
+        public FireMode fireMode;
+        public int burstAmount;
         
         private Animator _animator;
         private int _scopeIndex;
@@ -40,11 +47,15 @@ namespace Demo.Scripts.Runtime
             _animator = GetComponentInChildren<Animator>();
         }
 
-        public override Transform GetAimPoint()
+        public void UpdateAimPoint(bool cycleScope, bool pointAiming)
         {
-            _scopeIndex++;
-            _scopeIndex = _scopeIndex > scopes.Count - 1 ? 0 : _scopeIndex;
-            return scopes[_scopeIndex];
+            if (scopes != null && scopes.Count > 0)
+            {
+                if (cycleScope) _scopeIndex = (_scopeIndex + 1) % scopes.Count;
+                defaultAimPoint = pointAiming && pointAim != null ? pointAim : scopes[_scopeIndex];
+            }
+
+            if (defaultAimPoint == null) defaultAimPoint = transform;
         }
         
         public void OnFire()
